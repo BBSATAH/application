@@ -1,0 +1,1009 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #2C3E50; /* لون أزرق داكن */
+    --secondary-color: #3498DB; /* لون أزرق فاتح */
+    --background-color: #ECF0F1; /* لون خلفية فاتح */
+    --text-color: #2C3E50; /* لون نص داكن */
+    --text-color-light: #7F8C8D; /* لون نص فاتح */
+    --white: #ffffff; /* أبيض */
+    --black: #000000; /* أسود */
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    --shadow-hover: 0 6px 12px rgba(0, 0, 0, 0.2); /* ظل عند التمرير */
+    --transition: all 0.3s ease; /* انتقال سلس */
+}
+/*home page*/ 
+header {
+    padding: 80px 20px;
+    background: linear-gradient(90deg, #2C3E50 0%, #3498DB 100%); /* تدرج لوني أزرق */
+    color: #fff;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+header img {
+   cursor: pointer;
+} 
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    animation: fadeIn 1s ease-in-out;
+}
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #e0e0e0; /* لون رمادي فاتح */
+    animation: fadeIn 1.5s ease-in-out;
+}
+.cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #3498DB; /* لون أزرق فاتح */
+    color: #fff; /* لون النص /أبيض */
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: bounceIn 1s ease-in-out;
+}
+.dark-theme .cta-button {
+    background-color: #e0e4e7; /* لون أزرق فاتح */
+}
+.cta-button:hover {
+    background-color: #2980B9; /* لون أزرق أغمق عند التمرير */
+    transform: scale(1.05);
+}
+.logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px; /* حجم ثابت للشعار */
+    height: auto; /* الحفاظ على النسبة بين العرض والارتفاع */
+}
+.content {
+    padding: 50px 20px;
+    background-color: #fff; /* لون خلفية أبيض */
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2C3E50; /* لون النص داكن */
+}
+.content p {
+    font-size: 1.1rem;
+    color: #333; /* لون النص داكن */
+    margin-bottom: 20px;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.feature {
+    background-color: #3498DB; /* لون أزرق فاتح */
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+}
+.feature:hover {
+    background-color: #2980B9; /* لون أزرق أغمق عند التمرير */
+    transform: translateY(-10px);
+}
+.feature h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+.feature p {
+    font-size: 1rem;
+    color: #e0e0e0; /* لون رمادي فاتح */
+}
+/* Footer */
+.site-footer {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: #eaeaea;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    border-top: 1px solid #444;
+    padding-top: 10px;
+    color: #ccc;
+}
+
+.footer-content a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-content a:hover {
+    color: #ffffff;
+}
+
+.logo-goal-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+.footer-logo {
+    width: 100px;
+    height: 104px;
+    margin-right: 20px;
+}
+
+.goal-text h2 {
+    color: var(--secondary-color);
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.goal-text p {
+    color: #eaeaea;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+/*team (about us)*/
+ .team-section {
+            padding: 50px;
+            background-color: #f9f9f9;
+        }
+        .team-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .team-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+        .team-card img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .team-card h3 {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+        .team-card p {
+            font-size: 14px;
+            color: #666;
+        }
+        .social-links {
+            margin-top: 10px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            font-size: 20px;
+            color: #333;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #0072b1; /* لون التمرير */
+        }
+        
+/* Animations */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* التعديلات الخاصة بالهاتف المحمول */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem; /* تقليل حجم العنوان */
+    }
+
+    header p {
+        font-size: 1rem; /* تقليل حجم النص */
+    }
+
+    .cta-button {
+        font-size: 1rem; /* تقليل حجم زر الـ CTA */
+        padding: 10px 20px; /* تقليل حجم الزر */
+    }
+
+    .logo {
+        width: 20px; /* تقليل حجم الشعار */
+    }
+
+    .content {
+        padding: 30px 15px; /* تقليل المسافات الداخلية */
+    }
+
+    .content h2 {
+        font-size: 1.5rem; /* تقليل حجم العنوان */
+    }
+
+    .content p {
+        font-size: 1rem; /* تقليل حجم النص */
+    }
+
+    .features {
+        flex-direction: column; /* جعل الـ Features تظهر بشكل عمودي */
+    }
+
+    .feature {
+        width: 100%; /* جعل الـ Feature يأخذ العرض الكامل */
+        margin: 10px 0; /* تعديل الـ Margin */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* تقليل حجم العنوان أكثر */
+    }
+
+    header p {
+        font-size: 0.9rem; /* تقليل حجم النص أكثر */
+    }
+
+    .cta-button {
+        font-size: 0.9rem; /* تقليل حجم زر الـ CTA أكثر */
+        padding: 8px 16px; /* تقليل حجم الزر أكثر */
+    }
+
+    .logo {
+        width: 15px; /* تقليل حجم الشعار أكثر */
+    }
+
+    .content h2 {
+        font-size: 1.2rem; /* تقليل حجم العنوان أكثر */
+    }
+
+    .content p {
+        font-size: 0.9rem; /* تقليل حجم النص أكثر */
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+    color: var(--primary-color); /* استخدام اللون الأساسي للعناوين */
+}
+
+p {
+    color: var(--text-color);
+    text-align: center;
+}
+
+/* Header */
+.top-header {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* تقليل الحشوة */
+    box-shadow: var(--shadow);
+    position: relative; /* لإضافة القائمة المنسدلة */
+}
+
+/* الأيقونات في الهيدر */
+.header-icons {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header-icon {
+    width: 20px; /* حجم أصغر للأيقونات */
+    height: 20px;
+    transition: var(--transition);
+}
+
+.header-icon:hover {
+    transform: scale(1.2);
+}
+
+/* أيقونة القائمة (Menu Icon) */
+.menu-icon {
+    display: none; /* مخفية بشكل افتراضي */
+    flex-direction: column;
+    cursor: pointer;
+    background-color: transparent;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: var(--white);
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* تحريك أيقونة القائمة عند النقر */
+.change .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.change .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* القائمة العلوية (Top Nav) */
+.top-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.top-nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.top-nav a:hover {
+    color: var(--secondary-color);
+}
+
+/* Dark Theme */
+.dark-theme .top-nav {
+    background: linear-gradient(90deg, #000 0%, #444 100%);
+}
+
+body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-theme .section-card {
+    background-color: #1E1E1E;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .top-header {
+    background: linear-gradient(90deg, #000 0%, #444 100%);
+}
+
+.dark-theme .section-card h3 {
+    color: #ffffff;
+}
+
+.dark-theme .section-card p {
+    color: #cccccc;
+}
+
+.dark-theme .site-footer {
+    background: linear-gradient(90deg, #000 0%, #222 100%);
+}
+
+.dark-theme a {
+    color: var(--secondary-color);
+}
+
+.dark-theme a:hover {
+    color: #ffffff;
+}
+
+.dark-theme .menu-icon .bar {
+    background-color: #ffffff; /* اللون الأزرق في الوضع الليلي */
+}
+
+.dark-theme .header-icon {
+    filter: invert(1);
+}
+
+.dark-theme .top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.dark-theme .top-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.dark-theme .top-nav a:hover {
+    color: var(--secondary-color);
+}
+.dark-theme h1, h2 {
+    color: #ffffff;
+}
+.icon-link {
+    display: inline-block;
+}
+
+.dark-theme .course-card,
+.dark-theme .section-card,
+.dark-theme .game-card,
+.dark-theme .book-card {
+    background-color: #1E1E1E;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-theme .course-card h3,
+.dark-theme .section-card h3,
+.dark-theme .game-card h3,
+.dark-theme .book-card h3 {
+    color: #ffffff;
+}
+
+.dark-theme .course-card p,
+.dark-theme .section-card p,
+.dark-theme .game-card p,
+.dark-theme .book-card p {
+    color: #cccccc;
+}
+
+.dark-theme .course-card a,
+.dark-theme .section-card button,
+.dark-theme .game-card a,
+.dark-theme .book-card a {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.dark-theme .course-card a:hover,
+.dark-theme .section-card button:hover,
+.dark-theme .game-card a:hover,
+.dark-theme .book-card a:hover {
+    background-color: #2980B9; /* لون أزرق أغمق */
+}
+
+.logo-container {
+    flex-shrink: 0;
+}
+
+.header-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Courses style */
+header input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+main {
+    padding: 20px;
+}
+
+.section-title {
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: var(--primary-color); /* استخدام اللون الأساسي */
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    position: relative;
+}
+
+.course-card:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-hover);
+}
+
+.course-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.course-card-content {
+    padding: 15px;
+}
+
+.course-card-content h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--primary-color);
+}
+
+.course-card-content p {
+    margin: 10px 0;
+    color: var(--text-color-light);
+}
+
+.course-card-content button {
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.course-card-content button:hover {
+    background-color: #2980B9; /* لون أزرق أغمق */
+}
+
+footer {
+    margin-top: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Sections */
+.sections-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section-card img {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.section-card h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.section-card .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.section-card button {
+    padding: 6px 10px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 14px;
+}
+
+.section-card button:hover {
+    background-color: #2980B9; /* لون أزرق أغمق */
+}
+
+.section-card:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Games */
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.game-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.game-card img {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.game-card h3 {
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.game-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 6px 10px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.game-card a:hover {
+    background-color: #2980B9; /* لون أزرق أغمق */
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-hover);
+}
+
+/* Books */
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card img {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.book-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: var(--primary-color);
+}
+
+.book-card p {
+    font-size: 14px;
+    color: var(--text-color-light);
+    line-height: 1.5;
+}
+
+.book-card .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.book-card a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.book-card a:hover {
+    background-color: #2980B9; /* لون أزرق أغمق */
+}
+
+/* Animations */
+@keyframes slideInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes bounceIn {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0% {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+    }
+    20% {
+        transform: scale3d(1.1, 1.1, 1.1);
+    }
+    40% {
+        transform: scale3d(.9, .9, .9);
+    }
+    60% {
+        opacity: 1;
+        transform: scale3d(1.03, 1.03, 1.03);
+    }
+    80% {
+        transform: scale3d(.97, .97, .97);
+    }
+    100% {
+        opacity: 1;
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+.section-card, .course-card, .game-card, .book-card {
+    animation: slideInLeft 0.6s ease-out;
+}
+
+h1, h2, p, .top-header, .top-nav, .footer-content, .footer-bottom {
+    animation: slideInRight 0.8s ease-in;
+}
+
+.header-icon, .menu-icon, .header-logo {
+    animation: bounceIn 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.section-card, .course-card, .game-card, .book-card {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+h1, h2, p, .top-header, .top-nav, .footer-content, .footer-bottom {
+    animation: fadeIn 0.8s ease-in;
+}
+
+.header-icon, .menu-icon, .header-logo {
+    animation: scaleUp 0.5s ease-in-out;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+
+
+    .top-nav {
+        position: absolute;
+        top: 100%; /* وضع القائمة تحت الهيدر */
+        right: 0;
+        background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+        width: 100%; /* عرض كامل */
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        transform: translateX(100%); /* إخفاء القائمة */
+        transition: transform 0.3s ease-in-out;
+        padding: 10px 0;
+    }
+
+    .top-nav.active {
+        transform: translateX(0); /* إظهار القائمة */
+    }
+
+    .top-nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header-icons {
+        gap: 10px; /* تقليل المسافة بين الأيقونات */
+    }
+
+    .header-icon {
+        width: 20px; /* تصغير حجم الأيقونات */
+        height: 20px;
+    }
+
+    .sections-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-logo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .section-card img {
+        max-width: 120px;
+    }
+
+    .section-card h3 {
+        font-size: 1.2em;
+    }
+    @media (max-width: 768px) {
+        .logo {
+            width: 100px; /* الحفاظ على نفس الحجم للشعار */
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .top-header {
+        flex-direction: row; /* الحفاظ على تخطيط أفقي */
+        align-items: center;
+        padding: 8px;
+    }
+
+    .header-logo {
+        width: 20px; /* تصغير حجم الشعار */
+        height: 20px;
+    }
+
+    .header-icons {
+        gap: 8px; /* تقليل المسافة بين الأيقونات */
+    }
+
+    .header-icon {
+        width: 18px; /* تصغير حجم الأيقونات */
+        height: 18px;
+    }
+
+    .section-card {
+        padding: 15px;
+    }
+
+    .section-card img {
+        max-width: 100px;
+    }
+
+    .section-card h3 {
+        font-size: 1em;
+    }
+    @media (max-width: 768px) {
+        .logo {
+            width: 100px; /* الحفاظ على نفس الحجم للشعار */
+        }
+    }
+}
