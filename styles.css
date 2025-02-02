@@ -16,8 +16,7 @@
 header {
     padding: 80px 20px;
     background: linear-gradient(90deg, #2C3E50 0%, #3498DB 100%); /* تدرج لوني أزرق */
-    color: #000000;
-
+    color: #fff;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -28,7 +27,7 @@ header h1 {
     font-size: 3rem;
     margin-bottom: 15px;
     animation: fadeIn 1s ease-in-out;
-   color: black;
+    color: black;
 }
 header p {
     font-size: 1.2rem;
@@ -75,11 +74,11 @@ header p {
 .content h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: black; /* لون النص داكن */
+    color: #2C3E50; /* لون النص داكن */
 }
 .content p {
     font-size: 1.1rem;
-    color:black; /* لون النص داكن */
+    color: #333; /* لون النص داكن */
     margin-bottom: 20px;
 }
 .features {
@@ -108,7 +107,7 @@ header p {
 }
 .feature p {
     font-size: 1rem;
-    color:black; /* لون رمادي فاتح */
+    color: #e0e0e0; /* لون رمادي فاتح */
 }
 /* Footer */
 .site-footer {
@@ -977,7 +976,20 @@ h1, h2, p, .top-header, .top-nav, .footer-content, .footer-bottom {
         align-items: center;
         padding: 8px;
     }
-
+    @media (max-width: 768px) {
+        .footer-content {
+            flex-direction: row; /* الحفاظ على تخطيط أفقي */
+            align-items: center;
+            padding: 8px;
+        }
+    }
+    @media (max-width: 768px) {
+        .site-footer {
+            flex-direction: row; /* الحفاظ على تخطيط أفقي */
+            align-items: center;
+            padding: 8px;
+        }
+    }
     .header-logo {
         width: 20px; /* تصغير حجم الشعار */
         height: 20px;
