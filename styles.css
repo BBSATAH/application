@@ -28,7 +28,7 @@ header h1 {
     font-size: 3rem;
     margin-bottom: 15px;
     animation: fadeIn 1s ease-in-out;
-    color: black;
+   color: black;
 }
 header p {
     font-size: 1.2rem;
