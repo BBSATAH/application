@@ -73,11 +73,11 @@ header p {
 .content h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #2C3E50; /* لون النص داكن */
+    color: black; /* لون النص داكن */
 }
 .content p {
     font-size: 1.1rem;
-    color: #333; /* لون النص داكن */
+    color:black; /* لون النص داكن */
     margin-bottom: 20px;
 }
 .features {
@@ -106,7 +106,7 @@ header p {
 }
 .feature p {
     font-size: 1rem;
-    color: #e0e0e0; /* لون رمادي فاتح */
+    color:black; /* لون رمادي فاتح */
 }
 /* Footer */
 .site-footer {
